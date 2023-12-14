@@ -490,3 +490,17 @@ a.link-underline {
     @apply -translate-y-full;
   }
 }
+
+
+/****** states ******/
+[data-is-top="true"]{
+  .surface-menu {
+    background:none !important;
+  }
+}
+
+
+/***** page specific ******/
+/* Home */
+
+

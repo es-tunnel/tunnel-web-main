@@ -20,6 +20,9 @@ const { title, description, pageClass, thumbnail, og_image } = Astro.props;
 const navigation = await getEntry("config", "navigation");
 const about = await getEntry("config", "about");
 const contact = await getEntry("config", "contact");
+
+const currentPath = Astro.url.pathname.split("/")[1];
+
 ---
 
 <!doctype html>
@@ -31,7 +34,7 @@ const contact = await getEntry("config", "contact");
       thumbnail={!!og_image ? og_image : thumbnail}
     />
   </head>
-  <body class={`surface-base ${pageClass || ""}`}>
+  <body class={`surface-base ${pageClass || ""}`} id={`page_${currentPath}`}>
     {
       snipcartKey && (
         <SnipCart

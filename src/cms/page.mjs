@@ -19,7 +19,7 @@ export const page = {
       label: t("title"),
       name: "title",
       widget: "string",
-      pattern: [".{5,}", "Must have at least 20 characters"],
+      pattern: [".{2,}", "Must have at least 2 characters"],
     },
     {
       label: t("description_seo"),

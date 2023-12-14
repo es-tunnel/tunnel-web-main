@@ -3,7 +3,6 @@
     "BLOG_SLUG": "blog",
     "PORTFOLIO_SLUG": "work",
     "SHOP_SLUG": "shop",
-    "MENU_SLUG": "menu",
     "WEBSITE_LANGUAGE": "en",
     "CURRENCY": "USD",
     "UNITS": "metric",
