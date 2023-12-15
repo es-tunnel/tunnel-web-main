@@ -127,7 +127,7 @@ export const settings = {
     },
     {
       name: "project",
-      label: t("portfolio_settings"),
+      label: t("Work Settings"),
       file: "src/content/config/project.mdx",
 
       fields: [
