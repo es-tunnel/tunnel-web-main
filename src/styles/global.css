@@ -386,6 +386,10 @@ body {
   @apply text-lg;
 }
 
+.surface-menu .active a {
+  color:rgb(var(--color-secondary));
+}
+
 /* BUTTONS */
 
 .btn {
@@ -505,6 +509,9 @@ a.link-underline {
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
 
 /****** states ******/
 [data-is-top="true"]{

@@ -17,7 +17,7 @@ const showNewsletter = !!import.meta.env.NEWSLETTER_PROVIDER;
 
 <footer class="surface-footer relative grid">
   <div
-    class="container-xl mx-auto flex flex-col justify-between pb-5 pt-10 lg:flex-row lg:space-y-0"
+    class="px-8 mx-auto flex flex-col justify-between pb-5 pt-10 lg:flex-row lg:space-y-0"
   >
     <div
       class="flex flex-col items-center pb-8 text-center lg:w-1/3 lg:items-start lg:text-left"
@@ -47,7 +47,7 @@ const showNewsletter = !!import.meta.env.NEWSLETTER_PROVIDER;
           navigation.data.footer_menus &&
             navigation.data.footer_menus.map((menu) => (
               <div class="min-w-[12rem] space-y-3 sm:max-w-[14rem]">
-                <h3 class="font-semibold uppercase">{menu.label}</h3>
+                <h3 class="font-semibold uppercase hidden">{menu.label}</h3>
                 <ul class="space-y-1">
                   {menu.links.map((link) => (
                     <li>
@@ -64,8 +64,8 @@ const showNewsletter = !!import.meta.env.NEWSLETTER_PROVIDER;
               </div>
             ))
         }
-        <div class="min-w-[12rem] space-y-3 sm:max-w-[14rem]">
-          <div class="font-semibold uppercase">{t("social")}</div>
+        <div class="min-w-[12rem] space-y-3 sm:max-w-[14rem] hidden">
+          <div class="font-semibold uppercase hidden">{t("social")}</div>
           <div class="flex flex-col">
             {
               contact.data.social && (
@@ -90,7 +90,7 @@ const showNewsletter = !!import.meta.env.NEWSLETTER_PROVIDER;
 
         {
           showNewsletter && (
-            <div class="gap:10 flex-col content-end  items-end justify-end  py-0 pt-8 sm:ml-auto sm:flex sm:max-w-md sm:pt-0 sm:text-right">
+            <div class="gap:10 flex-col content-end  items-end justify-end hidden pt-0 pb-8 pt-8 sm:ml-auto sm:flex sm:max-w-md sm:pt-0 sm:text-right">
               <div
                 class="richtext dense no-lead balance leading-none opacity-80"
                 set:html={marked.parse(about.data.newsletter_text)}

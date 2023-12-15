@@ -100,7 +100,7 @@ const filter = post.data?.tag
     <PageLayoutSplit {...post.data} {base_url}>
       <Breadcrumb title={post.data.title} filter={filter} />
 
-      <div class="richtext">
+      <div class="richtext pb-8">
         <Content />
       </div>
       {post.data.features && (

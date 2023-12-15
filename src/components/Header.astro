@@ -25,7 +25,7 @@ const isActive = (href) => {
     >
     {
       menu && (
-        <ul class="nav-underline nav-links relative hidden flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-20 md:flex ">
+        <ul class="nav-underline nav-links relative flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-20 md:flex ">
           {menu.map((link) => (
             <li class={`${isActive(link.href) ? "active font-semibold" : ""}`}>
               <a href={link.href} class={`block py-3`}>
@@ -46,10 +46,9 @@ const isActive = (href) => {
             style={`--animation-delay: ${(0 + 1) * 100}ms`}
           >
             <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
+              href="/work"
+              class="grid h-full place-items-center text-xs "              
+              aria-label="Work"
             >
               Work
             </a>
@@ -59,10 +58,9 @@ const isActive = (href) => {
             style={`--animation-delay: ${(1 + 1) * 100}ms`}
           >
             <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
+              href="/facilities"
+              class="grid h-full place-items-center text-xs "              
+              aria-label="Facilities"
             >
               Facilities
             </a>
@@ -72,10 +70,9 @@ const isActive = (href) => {
             style={`--animation-delay: ${(2 + 1) * 100}ms`}
           >
             <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
+              href="/team"
+              class="grid h-full place-items-center text-xs "              
+              aria-label="Team"
             >
               Team
             </a>
@@ -85,10 +82,9 @@ const isActive = (href) => {
             style={`--animation-delay: ${(3 + 1) * 100}ms`}
           >
             <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
+              href="/contact"
+              class="grid h-full place-items-center text-xs "              
+              aria-label="Contact"
             >
               Contact
             </a>
@@ -130,57 +126,53 @@ const isActive = (href) => {
               >
                 
               <li
-            class="inner"
-            style={`--animation-delay: ${(0 + 1) * 100}ms`}
-          >
-            <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
-            >
-              Work
-            </a>
-          </li>
-          <li
-            class="inner"
-            style={`--animation-delay: ${(1 + 1) * 100}ms`}
-          >
-            <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
-            >
-              Facilities
-            </a>
-          </li>
-          <li
-            class="inner"
-            style={`--animation-delay: ${(2 + 1) * 100}ms`}
-          >
-            <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
-            >
-              Team
-            </a>
-          </li>
-          <li
-            class="inner"
-            style={`--animation-delay: ${(3 + 1) * 100}ms`}
-          >
-            <a
-              href=""
-              class="grid h-full place-items-center text-xs "
-              target="_blank"
-              aria-label=""
-            >
-              Contact
-            </a>
-          </li>
+                class="inner"
+                style={`--animation-delay: ${(0 + 1) * 100}ms`}
+              >
+                <a
+                  href="/work"
+                  class="grid h-full place-items-center text-xs "              
+                  aria-label="Work"
+                >
+                  Work
+                </a>
+              </li>
+              <li
+                class="inner"
+                style={`--animation-delay: ${(1 + 1) * 100}ms`}
+              >
+                <a
+                  href="/facilities"
+                  class="grid h-full place-items-center text-xs "              
+                  aria-label="Facilities"
+                >
+                  Facilities
+                </a>
+              </li>
+              <li
+                class="inner"
+                style={`--animation-delay: ${(2 + 1) * 100}ms`}
+              >
+                <a
+                  href="/team"
+                  class="grid h-full place-items-center text-xs "              
+                  aria-label="Team"
+                >
+                  Team
+                </a>
+              </li>
+              <li
+                class="inner"
+                style={`--animation-delay: ${(3 + 1) * 100}ms`}
+              >
+                <a
+                  href="/contact"
+                  class="grid h-full place-items-center text-xs "              
+                  aria-label="Contact"
+                >
+                  Contact
+                </a>
+              </li>
                 
               </ul>
             </NavMobile>
