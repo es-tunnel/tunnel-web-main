@@ -1,4 +1,4 @@
-# Nebulix | Astro + Static CMS
+# c0reV2 | Astro + Static CMS
 
 [![License: CC BY-ND 4.0](https://img.shields.io/badge/License-CC_BY--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
 
@@ -9,7 +9,7 @@ A Universe of Possibilities: Blogs, Portfolios, Webshop, Restaurant Menus, and B
 
 
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-00-start.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-00-start.jpg)
 
 ## Notice
 
@@ -20,7 +20,7 @@ Easily deploy this theme to Netlify with a single click, and conveniently update
 
 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/unfolding-io/nebulix#BLOG_SLUG=blog&PORTFOLIO_SLUG=work&SHOP_SLUG=shop&MENU_SLUG=menu&WEBSITE_LANGUAGE=en&CURRENCY=USD&UNITS=metric&NODE_VERSION=18)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/unfolding-io/c0reV2#BLOG_SLUG=blog&PORTFOLIO_SLUG=work&SHOP_SLUG=shop&MENU_SLUG=menu&WEBSITE_LANGUAGE=en&CURRENCY=USD&UNITS=metric&NODE_VERSION=18)
 
 
 ## Constellations of Features:
@@ -37,7 +37,7 @@ Easily deploy this theme to Netlify with a single click, and conveniently update
 -   🕵 Unveil Hidden Constellations with Full Text Search using Pagefind
 
 ## ♻️ Page Speed and Emissions
-Experience the green and swift capabilities of Nebulix. With an impressively low emission of 0.05g - 0.07g CO2 per page visit and consistently achieving a lighthouse score between 98 and 100, Nebulix ensures both speed and environmental consciousness for your website.
+Experience the green and swift capabilities of c0reV2. With an impressively low emission of 0.05g - 0.07g CO2 per page visit and consistently achieving a lighthouse score between 98 and 100, c0reV2 ensures both speed and environmental consciousness for your website.
 
 ## 🚀 Getting Started
 
@@ -87,7 +87,7 @@ Navigate to `src/pages/admin.astro` and provide your Git repository details. You
 const config = {
 	locale: lang,
 	site_url: url,
-	logo_url: 'https://nebulix.unfolding.io/nebulix-logo.svg',
+	logo_url: 'https://c0reV2.unfolding.io/c0reV2-logo.svg',
 	local_backend: true,
 	backend: {
 		name: 'gitlab',
@@ -160,13 +160,13 @@ All commands are run from the root of the project, from a terminal:
 ## 📁 Documentation
 Learn how to harness the power of Static CMS and craft a distinctive website that stands out from the crowd.
 
-[Documentation](https://nebulix.unfolding.io/blog/tag/docs)
+[Documentation](https://c0reV2.unfolding.io/blog/tag/docs)
 
 ## 🌐 Demo
 
-Witness the extraordinary speed of Nebulix in action.
+Witness the extraordinary speed of c0reV2 in action.
 
-[Demo](https://nebulix.unfolding.io)
+[Demo](https://c0reV2.unfolding.io)
 
 ## 👀 Want to learn more about Astro?
 
@@ -187,7 +187,7 @@ For those seeking priority assistance, we offer premium support services. Do you
 
 ## 📝 License
 
-Want to get rid of the attribution? Simply [purchase a license](https://nebulix.unfolding.io/shop/nebulix-license/) and you're good to go.
+Want to get rid of the attribution? Simply [purchase a license](https://c0reV2.unfolding.io/shop/c0reV2-license/) and you're good to go.
 
 ## 🚕 Roadmap
 
@@ -203,21 +203,21 @@ By [caffeinating](https://www.buymeacoffee.com/unfolding.io) your developer, you
 
 ## 📸 Screenshots
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-01-shop.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-01-shop.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-02-shop-category.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-02-shop-category.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-03-shop-product.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-03-shop-product.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-04-shop-product.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-04-shop-product.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-05-shop-product-dark.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-05-shop-product-dark.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-06-blogpost.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-06-blogpost.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-07-portfolio.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-07-portfolio.jpg)
 
-![Nebulix](https://nebulix.unfolding.io/screenshots/nebulix-08-footer.jpg)
+![c0reV2](https://c0reV2.unfolding.io/screenshots/c0reV2-08-footer.jpg)
 
 
 

@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "Nebulix" theme will be documented in this file.
+All notable changes to the "c0reV2" theme will be documented in this file.
 
 ## 0.19
 - Add color switch
