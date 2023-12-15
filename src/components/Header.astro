@@ -16,7 +16,7 @@ const isActive = (href) => {
 ---
 
 <header class="surface-menu nav sticky top-0 z-50" transition:name="nav">
-  <nav class="container-xl flex flex-nowrap items-stretch gap-6">
+  <nav class="flex flex-nowrap items-stretch gap-6 px-8">
     <a
       href="/"
       aria-label={title}
@@ -25,7 +25,7 @@ const isActive = (href) => {
     >
     {
       menu && (
-        <ul class="nav-underline nav-links relative hidden flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-50 md:flex ">
+        <ul class="nav-underline nav-links relative hidden flex-nowrap pl-4 uppercase tracking-wide before:absolute before:inset-y-4 before:left-0 before:border-l-2 before:border-primary before:border-opacity-20 md:flex ">
           {menu.map((link) => (
             <li class={`${isActive(link.href) ? "active font-semibold" : ""}`}>
               <a href={link.href} class={`block py-3`}>
@@ -39,38 +39,62 @@ const isActive = (href) => {
 
     {
       (
-        <ul class="nav-underline relative -mr-4  ml-auto flex flex-nowrap justify-end pl-4 uppercase md:mr-0">
-          <li>
-            <CartButton
-              label={t("cart")}
-              client:idle
-              transition:persist
-              transition:name="cart"
+        <ul class="nav-underline relative -mr-4  ml-auto flex flex-nowrap justify-end pl-4 uppercase md:mr-0">          
+          
+          <li
+            class="inner"
+            style={`--animation-delay: ${(0 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
             >
-              <Icon name="shopping-cart" class="h-6 w-6" />
-            </CartButton>
+              Work
+            </a>
           </li>
-          <li>
-            <PageFind />
+          <li
+            class="inner"
+            style={`--animation-delay: ${(1 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Facilities
+            </a>
+          </li>
+          <li
+            class="inner"
+            style={`--animation-delay: ${(2 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Team
+            </a>
+          </li>
+          <li
+            class="inner"
+            style={`--animation-delay: ${(3 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Contact
+            </a>
           </li>
 
-          {social &&
-            social.slice(0, 3).map((link) => (
-              <li class="hidden md:block">
-                <a
-                  href={link.href}
-                  class="grid h-full place-items-center"
-                  target="_blank"
-                  aria-label={link.label}
-                >
-                  <Icon name={link.icon} class="w-6" />
-                </a>
-              </li>
-            ))}
-
-          <li>
-            <ColorSwitch client:idle />
-          </li>
+          
 
           <li class="md:hidden">
             <NavMobile
@@ -102,24 +126,62 @@ const isActive = (href) => {
               </ul>
 
               <ul
-                class="relatives flex w-full flex-wrap justify-center gap-2 py-4"
-                slot="social"
+                class="relatives flex w-full flex-wrap justify-center gap-2 py-4"                
               >
-                {social.map((link, index) => (
-                  <li
-                    class="inner"
-                    style={`--animation-delay: ${(index + 1) * 100}ms`}
-                  >
-                    <a
-                      href={link.href}
-                      class="grid h-full place-items-center "
-                      target="_blank"
-                      aria-label={link.label}
-                    >
-                      <Icon name={link.icon} class="h-8 w-8" />
-                    </a>
-                  </li>
-                ))}
+                
+              <li
+            class="inner"
+            style={`--animation-delay: ${(0 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Work
+            </a>
+          </li>
+          <li
+            class="inner"
+            style={`--animation-delay: ${(1 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Facilities
+            </a>
+          </li>
+          <li
+            class="inner"
+            style={`--animation-delay: ${(2 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Team
+            </a>
+          </li>
+          <li
+            class="inner"
+            style={`--animation-delay: ${(3 + 1) * 100}ms`}
+          >
+            <a
+              href=""
+              class="grid h-full place-items-center text-xs "
+              target="_blank"
+              aria-label=""
+            >
+              Contact
+            </a>
+          </li>
+                
               </ul>
             </NavMobile>
           </li>

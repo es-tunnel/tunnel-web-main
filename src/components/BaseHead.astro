@@ -70,9 +70,10 @@ const pageTitle = `${title} | ${data.sitename}`;
       document.querySelector("html").dataset.theme = "light";
     }
     if (!localStorage.getItem("color-scheme")) {
-      let theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
+      // let theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      //   ? "dark"
+      //   : "light";
+      let theme = "dark";
       localStorage.setItem("color-scheme", theme);
     }
   };
