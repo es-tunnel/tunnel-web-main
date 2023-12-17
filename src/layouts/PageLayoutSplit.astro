@@ -5,11 +5,15 @@ import ItemFilter from "@components/navigation/ItemFilter.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import Block from "@components/block/Block.astro";
 import Button from "@components/navigation/Button.astro";
+import { MediaElementPlayer } from 'mediaelement';
+import 'mediaelement/build/mediaelementplayer.min.css';
+
 
 const {
   title,
   description,
   thumbnail,
+  video,
   og_image,
   intro,
   tag,
@@ -26,6 +30,7 @@ const {
 const { slug } = Astro.params;
 const pageTitle = `${title} ${filter ? `#${filter}` : ""}`;
 const hasBlocks = blocks && blocks.length > 0;
+const hasVideo = video && video.length > 0;
 ---
 
 <BaseLayout
@@ -46,8 +51,12 @@ const hasBlocks = blocks && blocks.length > 0;
           style.hero_surface || "surface-dark"
         } sticky top-0 overflow-hidden sm:h-screen`}
       >
+        { hasVideo && (
+          <video id="heroVideo" src={video} loop muted autoplay class="mejs__player" data-mejsoptions='{"alwaysShowControls": "false", "stretching":"fill"}' height="100%"></video>
+          )
+        } 
         {
-          thumbnail && (
+          thumbnail && !hasVideo && (
             <Picture
               attributes={{
                 picture: {
@@ -67,6 +76,7 @@ const hasBlocks = blocks && blocks.length > 0;
             />
           )
         }
+        
 
         <div
           class="page-split__title absolute inset-0 z-10 grid place-items-center"
@@ -186,6 +196,9 @@ const hasBlocks = blocks && blocks.length > 0;
 
     iframe {
       @apply aspect-video;
-    }
+    }    
   }
+
+  
 </style>
+

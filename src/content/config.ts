@@ -358,6 +358,7 @@ const page = defineCollection({
 		description: z.string(),
 		intro: z.string().optional(),
 		thumbnail: z.string(),
+		video: z.string().optional(),
 		og_image: z.string().optional(),
 		template: z.string().optional(),
 		container: z.string().optional(),

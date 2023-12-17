@@ -159,6 +159,12 @@ export const page = {
       ],
     },
     {
+      label: t("video"),
+      name: "video",
+      widget: "file",
+      required: false,
+    },
+    {
       label: t("featured_image"),
       name: "thumbnail",
       widget: "image",
