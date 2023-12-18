@@ -49,10 +49,12 @@ const hasVideo = video && video.length > 0;
       <div
         class={`${
           style.hero_surface || "surface-dark"
-        } sticky top-0 overflow-hidden sm:h-screen`}
+        } sticky top-0 overflow-hidden`}
       >
         { hasVideo && (
-          <video id="heroVideo" src={video} loop muted autoplay class="mejs__player" data-mejsoptions='{"alwaysShowControls": "false", "stretching":"fill"}' height="100%"></video>
+          <div id="heroVideo">
+            <video src={video} loop muted autoplay class="mejs__player" data-mejsoptions='{"alwaysShowControls": "false", "stretching":"fill"}' height="100%"></video>
+          </div>
           )
         } 
         {

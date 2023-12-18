@@ -37,9 +37,15 @@ const hasVideo = video && video.length > 0;
   }
   {
     hasVideo && (      
-        <video id="heroVideo" src={video} loop muted autoplay class="mejs__player" data-mejsoptions='{"alwaysShowControls": "false", "stretching":"fill"}' height="100%">
-          <slot name="hero" />
-        </video>      
+    <div class="hero relative overflow-hidden c0reV2-parallax surface-dark " id="header" data-astro-transition-scope="astro-oevpxwj7-1"> 
+      <div class="media parallax h-full w-full"> 
+        <div id="heroVideo">
+          <video src={video} loop muted autoplay class="mejs__player" data-mejsoptions='{"alwaysShowControls": "false", "stretching":"fill"}' height="100%">
+            <slot name="hero" />
+          </video>      
+        </div>
+      </div>
+    </div>
     )
   }
 

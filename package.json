@@ -47,6 +47,7 @@
     "async-validator": "^4.2.5",
     "body-scroll-lock": "^4.0.0-beta.0",
     "convert": "^4.14.0",
+    "gsap": "^3.12.4",
     "js-convert-case": "^4.2.0",
     "marked": "^11.0.0",
     "mediaelement": "^7.0.2",

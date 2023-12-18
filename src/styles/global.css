@@ -515,11 +515,7 @@ a.link-underline {
 
 
 /****** media *****/
-#heroVideo {
-  height:100%;
-  max-width: 100%;
-  max-width:100vw;
-}
+
 
 
 
@@ -529,6 +525,49 @@ a.link-underline {
     background:none !important;
   }
 }
+
+
+/****** components ******/
+#heroVideo {
+  height:70%;
+  height:70vh;
+  max-width: 100%;
+  max-width:100vw;
+  position: relative;
+
+  video {
+    height:100%;
+    width:100%;
+    max-width: none;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+.page-split__grid {
+  #heroVideo {
+    height:100%;
+    height:100vh;
+    max-width:none;
+
+  }
+}
+@media screen and (max-width: 1024px) {
+  #heroVideo, #header {
+    height:50%;
+    height:60vh;
+    max-width:none;
+    min-width: 100vw;
+
+  }
+} 
+.noHeroText {
+  .page-split__title {
+    display:none;
+  }
+}
+
 
 
 /***** page specific ******/
